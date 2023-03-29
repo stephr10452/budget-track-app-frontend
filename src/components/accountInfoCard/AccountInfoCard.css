@@ -1,0 +1,24 @@
+.accountInfoCard{
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .account-type {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .account-amount {
+    font-size: 16px;
+  }
+  
+  .account-number {
+    font-size: 14px;
+    color: #999;
+  }
+  
