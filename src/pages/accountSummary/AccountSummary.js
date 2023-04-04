@@ -1,13 +1,17 @@
 import React from "react"
 import AccountInfoList from "../../components/accountInfoList/AccountInfoList";
 
-const AccountSummary = ({accounts}) => {
+import PageLayout from '../../layouts/pageLayout/PageLayout';
+
+const AccountSummary = () => {
   
   
     return (
-        <div className="accountSummary">
-                 <AccountInfoList  accounts={[{type: 'Checking', amount: 2500, accountNumber: '2468135790' },{type: 'Checking', amount: 2500, accountNumber: '2468135790' }]}/>
-        </div>
+        <PageLayout>
+            <div className="accountSummary">
+                    <AccountInfoList  />
+            </div>
+        </PageLayout>
     );
   };
   

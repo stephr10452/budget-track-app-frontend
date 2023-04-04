@@ -1,5 +1,6 @@
 import React from "react";
 import AccountSummary from "./pages/accountSummary/AccountSummary";
+import Navbar from "./components/navbar/Navbar";
 
 
 
@@ -8,8 +9,8 @@ function App() {
   
   return (
     <div>
-     <AccountSummary />
-     
+      <Navbar />
+      <AccountSummary />
     </div>
   );
 }

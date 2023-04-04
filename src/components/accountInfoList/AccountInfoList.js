@@ -1,6 +1,7 @@
 import React, { useState,useEffect, useCallback } from "react";
 import { usePlaidLink } from "react-plaid-link";
 import AccountInfoCard from "../accountInfoCard/AccountInfoCard";
+import "./AccountInfoList.css"
 
 const AccountInfoList = () => {
     const [accounts, setAccounts] = useState([]);
@@ -66,26 +67,24 @@ const AccountInfoList = () => {
         open();
       }
     }, [token, isOauth, ready, open]);
-  
-    console.log(data)
-    console.log(accounts)
 
   
     return (
         <div className="accountInfoList">
-            
             <div className="accountInfoList__title">
-             Account List 
+             Account List
             </div>
             <div className="accountInfoList__container">
-              { accounts.length > 0 && accounts.map((account=>{
-                return <AccountInfoCard account={account} />
-             }))}
-             {accounts.length === 0 && 
-              <button onClick={() => open()
-              } disabled={!ready}>
-              <strong>Load Accounts</strong>
-            </button> }
+                { accounts.length > 0 && accounts.map((account=>{
+                    return <AccountInfoCard account={account} />
+                }))}
+
+                {accounts.length === 0 && 
+                    <button onClick={() => open()
+                    } disabled={!ready}>
+                        <strong>Load Accounts</strong>
+                    </button> 
+                }
             </div>
         </div>
     );
