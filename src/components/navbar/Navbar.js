@@ -8,7 +8,10 @@ const Navbar = () => {
     return (
         <div className="navbar">
          <ol className="navItems">
-         <li> Simple Budgeting </li> 
+
+         <li><img src="piggybank.png" alt="piggybank icons"></img>
+             Simple Budgeting 
+            </li> 
          <li> Transactions</li>
          <li> Budget Goals </li>
          <li> Reports</li>

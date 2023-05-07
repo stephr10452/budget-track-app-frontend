@@ -1,9 +1,9 @@
 
 .navbar {
     /* display: grid; */
-    background-color: #5F9EA0;
+    background-color: #006400;
     border-bottom: solid white 15px;
-    opacity: 0.5;
+    opacity: 0.8;
     /* grid-template-columns: 15% 35% 35%; */
     /* justify-items: center;
     align-items: center; */
@@ -16,4 +16,6 @@
      display: flex;
      flex-direction: row;
      justify-content: space-around;
+     
+     
   }
